@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+
+    <head>
+        <meta charset="utf-8">
+        <title>Purchases&Donations</title>
+        <link rel="stylesheet" href="Style/9)Purchases&Donations.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+         <nav>
+            <ul>
+                <li id="Home"><a href="index.html">Home</a></li>
+                <li><a href="#">Nature</a>
+                    <ul>
+                        <li><a href="2.Fauna.html">Fauna</a></li>
+                        <li><a href="3.Flora.html">Flora</a></li>
+                    </ul>
+                </li>
+                <li><a href="4.Beaches.html">Beaches</a></li>
+                <li><a href="5.Activities.html">Activities</a></li>
+                <li><a href="#">Heritage Sites</a>
+                    <ul>
+                        <li><a href="6.Sigiriya.html">Sigiriya</a></li>
+                        <li><a href="7.GalleFort.html">Galle Fort</a></li>
+                        <li><a href="8.Dambulla.html">Dambulla</a></li>
+                    </ul>
+                </li>
+                <li><a href="9.Purchases&Donations.html">Purchases&Donations</a></li>
+            </ul>
+         </nav>
+    </head>
+    
+
+
+     <body>
+        <img src="Images/Purchases_front.webp" id="frontimg">
+
+         
+
+
+        <div class="container"> 
+            <div class="item"> 
+                <h3>Types of Donations</h3>
+               <img src="Images/Purchases_donation.webp" alt="Donations"> 
+               <p> Sri Lanka, the home country to all these beautiful fauna, flora, beaches and historical monuments,
+                   could really use your help, no mattter how small during this economically challenging time.
+                Foundation of Goodness, Ghedora Connects, Reachout SL, Red Cross Sri Lanka are a few non-profit social service 
+                organizations where you can extend your support. 
+               </p> 
+            </div> 
+            <div class="item"> 
+                <h3>Local Merchandise</h3>
+               <img src="Images/Purchases_merchandise.webp" alt="Local Merchandise"> 
+               <p> Want to take a little something back home with you to remember your vacation in Sri Lanka? Make sure you get some
+                   premium quality tea from Nuwara Eliya or some traditional masks from Kandy, our famous spices or even some coconut shell
+                   kitchenware from shops across the country. They are not as costly as gems, jewelley or batik items and it also means a lot
+                   to the local vendors.  
+            </p> 
+            </div> 
+            <div class="item"> 
+                <h3>Ways to Help Wildlife</h3>
+               <img src="Images/Purchases_helpwildlifewebp.webp" alt="Help Wildlife"> 
+               <p>Sri Lanka has 66 critically endagered and 102 endagered species according to IUCN's redlist databse. Little actions like using less
+                   plastic during your travels, planting trees, volunteering for an organization or movement involved in Wildlife conservation will be of
+                   tremendous help to the beautiful animals of Sri Lanka. Sri Lanka Wildlife conservation Authority and Oceanswell are pioneering organizations
+                   which you can extend your support to.
+               </p> 
+            </div> 
+         </div>
+         <br>
+         <br>
+         <br>
+         <p class="text">Donations :-</p>
+
+
+
+         <!-------Donations Form------------>
+
+
+         <br>
+         <br>
+         <br>
+
+
+
+         <div class="donation-form">
+            <form action="" class="contact-col" id="frmDonation">
+                <label for="nameinput"></label>
+                <input type="text" id="name" placeholder="Name" required>
+                <label for="email"></label>
+                <input type="email" id="email" placeholder="Email" required >
+                <textarea  rows="3" id="address" placeholder="Address" required ></textarea>
+                <label for="Donations" id="fixedDonations" class="lbdate">Donation Amounts Available</label>
+                <select name="language" class="custom-select" id="fixedDonatons" multiple >
+                    <option value="100">LKR 100 </option>
+                    <option value="500">LKR 500 </option>
+                    <option value="1000">LKR 1000 </option>
+                    <option value="2500">LKR 2500 </option>
+                    <option value="5000">LKR 5000 </option>
+                    
+                  </select>
+                <textarea  rows="5" id="comment" placeholder="Enter Donation Amount" required ></textarea>
+                
+            </form>
+
+            <form class="paymentDetails" action=""  method="post" >
+                <div class="inputBox">
+                    <span>Card number</span>
+                    <label for="cardNumber"></label>
+                    <input type="text" id="cardNum" maxlength="16" class="card-number-input">
+                </div>
+
+
+                
+                <div class="flexbox">
+                    <div class="inputBox" >
+                        <span>expiration mm</span>
+                        <select name="" id="monthInput" class="month-input">
+                            <option value="month" selected disabled>Month</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </div>
+                    <div class="inputBox">
+                        <span>expiration yy</span>
+                        <select name="" id="yearInput" class="year-input" onselect="inputValidatiom()">
+                            <option value="year" selected disabled>Year</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>  
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                        </select>
+                    </div>
+                    <div class="inputBox" id="cvvInput">
+                        <span>cvv</span>
+                        <input type="text" id="cvv" maxlength="3" class="cvv-input" >
+                    </div>
+                </div>
+                <input type="button" value="Donate" id="donateBtn" class="submit-btn" onclick="inputValidation();">
+            </form>
+
+
+        </div> 
+
+
+        <section>
+
+            <p>Contact Us</p>
+            <p>Sri Lanka Toursim Promotion Bureau - +94 112426900</p>
+            <p>Sri Lanka Tourism Development Authority - +94 112436907</p>
+            <p>Help Desk, Sri Lanka Tourism Authority - 1912</p>
+        </section>
+
+        <footer>
+            <img src="Images/Home_social.webp" id="social">
+            <p>Sawiru Fernando</p>
+            <p>Info |  Support  |  Contact us</p>
+            <p>Project 2022</p>
+
+            <!References>
+        
+            <! Front image
+                Pexels-Lora Tusek Art
+                Available at: https://www.pexels.com/@lora-tusek-97051/
+                (Accessed: 15th June 2022)
+ 
+                Travel Triangle- 5 top things to do in Ambalangoda 
+                Available from: https://traveltriangle.com/blog/things-to-do-in-ambalangoda-alone-sri-lanka-bdp/
+                (Accessed: 15th June 2022)
+
+                istock photos-Charity 
+                Available from: https://www.istockphoto.com/videos/charity-donate-money
+                (Accessed: 15th June 2022)
+
+                KolaGoodies.com - Sri Lanka Crisis Relief 
+                Available from: https://www.kolagoodies.com/pages/sri-lanka-crisis-relief
+                (Accessed: 15th June 2022)
+ 
+                Its all trip to me-What to buy in Sri Lanka 
+                Available from: https://www.itsalltriptome.com/what-to-buy-in-sri-lanka/
+                (Accessed: 15th June 2022)
+
+                Pulse.lk- Protecting Sri Lankan Wildlife 
+                Available from: http://pulse.lk/everythingelse/protecting-sri-lankas-wildlife-an-uphill-battle/
+                (Accessed: 15th June 2022)>
+        </footer>
+    
+        <script src="Script/main.js"> </script>
+
+
+    </body>
+
+
+</html>

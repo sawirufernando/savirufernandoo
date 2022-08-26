@@ -1,0 +1,225 @@
+/*Navigation*/
+head{
+    margin: 0;
+    padding:0;
+    color: white;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+
+ #Home{
+    padding-right:82px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+nav{
+    background: #3F434D;
+}
+
+nav:after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+
+nav ul li{
+    display: inline-block;
+    background: #3F434D;
+    margin: 0 50px;
+}
+
+nav ul li a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 20px;
+    padding: 8px 15px;
+}
+
+nav ul li a:hover{
+    color: #0789ea;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #0789ea,
+                0 0 5px #0789ea;
+}
+
+nav ul ul li:hover{
+    margin-left: 20px;
+}
+
+nav ul ul{
+    position: absolute;
+    top: 90px;
+    border-top: 3px solid #0789ea;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+}
+
+nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul ul li{
+    position: relative;
+    margin: 0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border: 1px solid rgba(0,0,0,0.3);
+}
+
+nav ul ul li a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 50px;
+    font-size: 18px;
+}
+/*Navigation*/
+
+
+body{
+    background-color: bisque;
+}
+
+#frontimg{
+    width: 100%;
+    height: auto;
+    padding-top: 0%;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333538;
+    font-size:130%;
+    
+}
+
+h2{
+    text-align: left;
+    font-size: 200%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2d2f33;
+}
+
+.img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.img:hover {
+    transform: scale(1.1);
+    transition: transform .5s ease-out;
+}
+
+.text{
+    
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 130%;
+}
+
+h4{
+    margin-left:20% ;
+    margin-right: 20%;
+    font-size: 150%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.map{
+    width:100%;
+    height: auto;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+h5{
+    margin-top: 8%;
+    text-align: center;
+    font-size: 150%;
+    color: #333538;
+    text-decoration: underline;
+}
+
+
+
+.table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table td,.table th{
+  padding:12px 15px;
+  text-align: center;
+  font-size:16px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.table th{
+	background-color: rgb(48, 48, 50);
+	color:#ffffff;
+}
+
+.table tbody tr:nth-child(even){
+	background-color: #f5f5f5;
+}
+
+/*responsive*/
+
+@media(max-width: 500px){
+	.table thead{
+		display: none;
+	}
+
+	.table, .table tbody, .table tr, .table td{
+		display: block;
+		width: 100%;
+	}
+	.table tr{
+		margin-bottom:15px;
+	}
+	.table td{
+		text-align: right;
+		padding-left: 50%;
+		text-align: right;
+		position: relative;
+	}
+	.table td::before{
+		content: attr(data-label);
+		position: absolute;
+		left:0;
+		width: 50%;
+		padding-left:15px;
+		font-size:15px;
+		font-weight: bold;
+		text-align: left;
+	}
+}
+
+footer{
+    text-align: center;
+}
+
+#social{
+    margin-top: 10%;
+    height:auto;
+    width:15%;
+    margin-left: 40%;
+    margin-right: 40%;
+}
